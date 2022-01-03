@@ -33,6 +33,9 @@
 #define LPS_TEMP_OUT_H          0x2C
 #define LPS_RES                 0x33        //Filter reset register
 
+#ifdef __cplusplus
+extern "C" {
+#endif
 
 char I2C_readByte(char reg);
 unsigned short I2C_readU16(char reg);
@@ -40,5 +43,10 @@ void I2C_writeByte(char reg, char val);
 void LPS22HB_RESET();
 void LPS22HB_START_ONESHOT();
 uint8_t LPS22HB_INIT();
+
+#ifdef __cplusplus
+}
+#endif
+
 #endif 
 
