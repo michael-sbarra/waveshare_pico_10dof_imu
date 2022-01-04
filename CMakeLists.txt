@@ -6,7 +6,7 @@ if(NOT hasParent)
     include(pico_sdk_import.cmake)
 endif()
 
-project(waveshare-pico-10dof-imu_project)
+project(waveshare_pico_10dof_imu)
 
 if(NOT hasParent)
     pico_sdk_init()
@@ -22,6 +22,9 @@ target_link_libraries(lps22hb PUBLIC hardware_i2c pico_stdlib)
 add_library(icm20948 src/icm20948/icm20948.c)
 target_include_directories(icm20948 PRIVATE include)
 target_link_libraries(icm20948 PUBLIC hardware_i2c pico_stdlib)
+
+set(${PROJECT_NAME}_INCLUDE_DIRS ${CMAKE_CURRENT_LIST_DIR}/include
+    CACHE INTERNAL "${PROJECT_NAME}: Include Directories" FORCE)
 
 # main
 add_executable(imu src/main.c)
