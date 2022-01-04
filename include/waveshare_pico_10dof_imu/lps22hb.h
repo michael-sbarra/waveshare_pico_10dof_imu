@@ -5,7 +5,7 @@
 #include "pico/stdlib.h"
 
 //i2c address
-#define LPS22HB_I2C_ADDRESS		0x5C
+#define LPS22HB_I2C_ADDRESS     0x5C
 //
 #define LPS_ID                  0xB1
 //Register 
