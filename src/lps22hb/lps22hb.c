@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <math.h>
-#include "lps22hb.h"
+#include "waveshare_pico_10dof_imu/lps22hb.h"
 char I2C_readByte(char reg)
 {
 	char buf[] = { reg };

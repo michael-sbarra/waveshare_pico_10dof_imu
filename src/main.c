@@ -15,8 +15,8 @@
 	You should have received a copy of the GNU General Public License
 	along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
-#include "icm20948.h"
-#include "lps22hb.h"
+#include "waveshare_pico_10dof_imu/icm20948.h"
+#include "waveshare_pico_10dof_imu/lps22hb.h"
 #include <stdio.h>
 #include "pico/stdlib.h"
 

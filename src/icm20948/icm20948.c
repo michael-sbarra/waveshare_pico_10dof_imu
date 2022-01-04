@@ -1,4 +1,4 @@
-#include "icm20948.h"
+#include "waveshare_pico_10dof_imu/icm20948.h"
 #include <string.h>
 
 #define I2C_PORT i2c1
